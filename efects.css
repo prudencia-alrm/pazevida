@@ -1,0 +1,111 @@
+@charset "UTF-8"
+
+    /*Estilo para todos os dispositivos*/  
+
+    body header h1 {
+        text-shadow: 0 0 10px rgb(255, 217, 0);
+        animation: reluzir 1s ease-in-out infinite;
+      }
+
+       /*Efeito reluzir*/
+      @keyframes reluzir {
+        0% {
+          text-shadow: 0 0 5px gold;
+        }
+        50% {
+          text-shadow: 0 0 20px gold, 0 0 30px gold;
+        }
+        100% {
+          text-shadow: 0 0 10px gold;
+        }
+      }
+
+
+      /* Media queries para tablets*/
+      @media (max-width:720px) {
+        
+        .igreja{
+            font-size: 76px;
+           
+        }
+
+        
+        
+         /*outras regras de estilos especificos para tablets*/ 
+      }  
+      
+
+      /* Media query para smartphones */
+      @media (max-width: 610px) {
+        .igreja {
+            font-size: 55px;
+            text-align: center;
+            padding: 0px;
+        }
+        body header h2{        
+          font-size: 2em;
+        }
+
+        .gif {
+          max-width: 70px;
+          position: absolute;
+          top: 30;
+        /*outras regras de estilos especificos para tablets */
+      }
+    }
+           
+     
+           /*Jesus et´s voltando */
+    .anima {
+        position: relative;
+        overflow: hidden;
+        max-width: 100%;
+        height: 100vh;
+      }
+
+      .gif {
+        position: absolute;
+        top: 10%;
+        right: 100%;
+        transform: translate(0%, -50%);
+        white-space: nowrap;
+        animation: movegif 10s infinite linear;
+      } @keyframes movegif {
+        0% {
+          left: -100%;
+        }
+        30% {
+          left: 20%;
+        }
+        50% {
+          left: 30%;
+        }
+        100% {
+          left: 100%;
+        }
+    }
+      
+      .move {
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        transform: translate(0, -50%);
+        white-space: nowrap;
+        animation: moveText 20s infinite linear;
+      }
+      
+      @keyframes moveText {
+          0% {
+            right: -100%;
+          }
+          20% {
+            right: 10%;
+          }
+          50% {
+            right: 30%;
+          }
+          100% {
+            right: 100%;
+          }
+      }
+      
