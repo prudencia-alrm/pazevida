@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: aqua;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+
+    /* Estilos específicos para cada tipo de display */
+    .block {
+      display: block;
+      background-color: lightblue;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .inline {
+      display: inline;
+      background-color: lightgreen;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: lightgoldenrodyellow;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: lightpink;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .flex-item {
+      background-color: lightcoral;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: lightskyblue;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Tipos de Display</h1>
+
+  <div class="block">
+    <h2>display: block;</h2>
+    <p>Este é um elemento com display block. Ele ocupa toda a largura disponível.</p>
+  </div>
+
+  <span class="inline">display: inline;</span>
+  <span class="inline">Este é um elemento com display inline. Ele fica na mesma linha que o texto.</span>
+
+  <div class="inline-block">display: inline-block;</div>
+  <div class="inline-block">Este é um elemento com display inline-block. Ele tem largura definida, mas fica em linha.</div>
+
+  <div class="flex-container">
+    <div class="flex-item">display: flex;</div>
+    <div class="flex-item">Este é um elemento flexível dentro de um container flex.</div>
+    <div class="flex-item">Ele permite controlar o layout e alinhamento dos elementos filhos.</div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">display: grid;</div>
+    <div class="grid-item">Este é um elemento em um layout de grade.</div>
+    <div class="grid-item">Ele organiza os elementos em linhas e colunas.</div>
+    <div class="grid-item">Este é um item adicional da grade.</div>
+    <div class="grid-item">E aqui temos mais um item da grade.</div>
+    <div class="grid-item">Você pode ajustar a posição e o tamanho dos elementos na grade.</div>
+  </div>
+</body>
+</html>

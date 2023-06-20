@@ -38,19 +38,52 @@
       /* Media query para smartphones */
       @media (max-width: 610px) {
         .igreja {
-            font-size: 55px;
+            font-size: 130px;
             text-align: center;
-            padding: 0px;
+            margin-top: 69px;
+            
         }
-        body header h2{        
+        body header h2{
+          display: inline;        
           font-size: 2em;
+          position: relative;
+          left: 3em;
+        }
+        #address {
+          display: block;
+          background-color: #df3939e7;          
+          height:100px;
+          width: 95.5vw;
+          margin: 0px 0px 0px -6px ;
+          position: absolute;
+          top: 475px;
+          left: 77px;
+         }
+
+        .texto2{
+          font-family: var(--font3);
+          font-size: 1.5em;
+          position: absolute;
+          top: 59px;
+          left: 19px;
+          margin: -10px;
         }
 
         .gif {
-          max-width: 70px;
+          max-width: 80px;
           position: absolute;
-          top: 30;
+          top: 70px;
+          left: 78px;
         /*outras regras de estilos especificos para tablets */
+      }
+      footer{
+        margin-top: 360%;
+        min-width: 120px;
+        height: 130px;
+        width: 98.5vw;  
+        font-size: 1.2em;
+        
+        
       }
     }
            
@@ -58,8 +91,8 @@
            /*Jesus et´s voltando */
     .anima {
         position: relative;
-        overflow: hidden;
-        max-width: 100%;
+        overflow: none;
+        max-width: 98%;
         height: 100vh;
       }
       /*
@@ -86,6 +119,8 @@
         }
     }
       */
+
+      /*
       .move {
         position: absolute;
         top: 10%;
@@ -109,4 +144,5 @@
             right: 100%;
           }
       }
+      */
       
